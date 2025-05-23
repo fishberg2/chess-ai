@@ -1,0 +1,39 @@
+table {
+  border: 2px solid black;
+  border-collapse: collapse; /* Ensures borders don't double up */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle; /* For vertical centering of text/pieces */
+  border: 1px solid #555; /* Light border for individual cells */
+}
+
+/* Alternating colors for squares */
+/* Even rows */
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: #D2B48C; /* Light brown - tan */
+}
+tr:nth-child(even) td:nth-child(even) {
+  background-color: #8B4513; /* Dark brown - saddlebrown */
+}
+
+/* Odd rows */
+tr:nth-child(odd) td:nth-child(odd) {
+  background-color: #8B4513; /* Dark brown - saddlebrown */
+}
+tr:nth-child(odd) td:nth-child(even) {
+  background-color: #D2B48C; /* Light brown - tan */
+}
+
+h1 {
+  text-align: center;
+}
+
+.selected {
+  background-color: yellow !important; /* Highlight for selected piece */
+}
